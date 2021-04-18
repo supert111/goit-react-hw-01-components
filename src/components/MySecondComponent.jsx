@@ -8,7 +8,7 @@ class MySecondComponent extends Component {
             <div className="second-component">
                 <h3>This React trening</h3>
                 <p>jkhlkdfhui fdhlkjhlk :))</p>
-        <p>user name: {this.props.user.name} </p>
+                <p>user name: {this.props.user.name} </p>
             </div>
         );
     }
