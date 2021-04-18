@@ -1,0 +1,33 @@
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    height: 50px;
+    margin: 0 0 10px;
+    background-color: white;
+}
+
+.avatar{
+    border: 1px solid #05010ae1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.isOnline{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.isOfline{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    margin-right: 10px;
+}
