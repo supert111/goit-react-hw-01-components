@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import styles from "./statistics.module.css";
 
-const Statistics = ({title, stats, сolor}) => {
+
+const Statistics = ({title, stats}) => {
     return (
         <section className={styles.statistics}>
-            <h2 className={styles.title}>{title}</h2>
-
+            {title && <h2 className={styles.title}>{title}</h2>}
             <ul className={styles.stat_list}>
                 {stats.map(stat => (
-                    <li className={styles.item} key={stat.id} style={сolor}>
+        
+                    <li className={styles.item} key={stat.id}>
                         <span className={styles.label}>{stat.label}</span>
                         <span className={styles.percentage}>{stat.percentage}%</span>
                     </li>
@@ -17,6 +18,10 @@ const Statistics = ({title, stats, сolor}) => {
         </section>
     );
 }
+
+Statistics.defaultProps = {
+    title: '',
+};
 
 Statistics.propTypes = {
     title: PropTypes.string.isRequired,

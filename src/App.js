@@ -18,7 +18,7 @@ const App = () => (
             avatar={user.avatar}
             stats={user.stats}
         />
-        <Statistics title="Upload stats" stats={statisticalData} сolor={colorX}/>
+        <Statistics title="Upload stats" stats={statisticalData} />
         <FriendList friends={friends} />
         <TransactionHistory items={transactions} />
     </>
@@ -26,7 +26,3 @@ const App = () => (
 );
 
 export default App;
-
-const colorX = {
-    backgroundColor: `rgb(${(Math.random() * (255 - 1) + 1)}, ${(Math.random() * (255 - 1) + 1)}, ${(Math.random() * (255 - 1) + 1)})`
-}
